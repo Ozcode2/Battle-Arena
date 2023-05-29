@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="images/fav.ico">
+    <title>Battle Of Realms</title>
+</head>
+<body>
+    <div class="text"><marquee><h1>BATTLE OF REALMS</h1></marquee></div>
+    <div class="container">
+        <div class= "P1">
+          <h2 class="name1">Hiroshima</h2>
+        <div class="icon"><img onclick="attackNagasaki()" id="playerCharacter" src="images/villain.GIF" style="height: 170px"></div>
+      </div> 
+          <div class="HealDiv">
+        <button onclick = "healingHiroshima()" id="healHiroshima">Heal</button>
+      </div>
+      <div class="Opponent">
+          <h2 class="name2">Nagasaki</h2>
+        <div class="iconic"> <img id="opponentCharacter" src="images/Hero.GIF" style="height: 200px"></div>
+        </div>
+          <div class="HealDiv2">
+        <button onclick = "healNagasaki()" id="healNagasaki">Heal</button>
+      </div>
+    <button id="start" onclick="start()">Restart</button> 
+    <audio id="Health" controls style="display:none">
+  <source src="sounds/Health.mp3" type="audio/mpeg"> 
+    </audio>
+    <audio id="fightVoice" controls style="display:none">        
+  <source src="sounds/fighting voice.mp3" type="audio/mpeg"> 
+    </audio> 
+    <audio id="punchSound" controls style="display:none">
+  <source src="sounds/punch.mp3" type="audio/mpeg">
+    </audio> 
+    <audio id="painSound" controls style="display:none">
+  <source src="sounds/Pain.mp3" type="audio/mpeg">
+    </audio> 
+    <audio id="RecordSound" controls style="display:none">
+  <source src="sounds/Recording.mp3" type="audio/mpeg">
+    </audio> 
+    <audio id="RecordVoice" controls style="display:none">
+  <source src="sounds/Recording2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="Start" controls style="display:none">
+  <source src="sounds/start.mp3" type="audio/mpeg">
+    </audio>
+<div id="hiroshimaHealth">200</div>
+<div id="nagasakiHealth">200</div>
+<p id="winner"></p>
+<button id="pause" onclick="pause()">⏸</button>
+<button id="play" onclick="play()">▶</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
